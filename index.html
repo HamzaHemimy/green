@@ -3,22 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Portfolio</title>
+<title>Merry Portfolio</title>
 
+<!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #000;
+}
+
+.section-dark {
+    background-color: rgb(2,48,2);
+}
+
+.section-darker {
+    background-color: rgb(1,34,1);
+}
+
+.service-box {
+    border: 2px solid #05d105;
+    border-radius: 20px;
+    color: white;
+    height: 100%;
+    padding: 25px;
+}
+</style>
 </head>
 
-<body style="background:#000;">
+<body>
 
-<!-- ========== HEADER ========== -->
-<header style="background:#000; min-height:100vh;">
-<nav class="navbar navbar-expand-lg px-4">
-    <a class="navbar-brand text-white" href="#">
-        M<span style="color:#12e712;">erry</span>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark container py-3">
+    <a class="navbar-brand" href="#">
+        M<span class="text-success">erry</span>
     </a>
 
-    <button class="navbar-toggler bg-success" type="button"
+    <button class="navbar-toggler" type="button"
             data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -35,95 +63,17 @@
     </div>
 </nav>
 
-<div class="text-center mt-5">
+<!-- ================= HEADER ================= -->
+<header class="text-center py-5">
     <img src="./WhatsApp Image 2026-01-02 at 1.55.31 PM (1).jpeg"
-         class="rounded-circle"
-         style="width:100px;height:100px;">
+         class="rounded-circle img-fluid"
+         style="width:100px;">
+
     <h1 class="mt-3 text-success">Marry Smith</h1>
     <p class="text-white">Lorem ipsum dolor sit amet consectetur.</p>
-</div>
 </header>
 
-<!-- ========== ABOUT ========== -->
-<section style="background:#023002; min-height:100vh;">
-<div class="container py-5">
-<div class="row align-items-center">
-
-    <div class="col-lg-5 col-12 text-center mb-4 mb-lg-0">
-        <img src="./WhatsApp Image 2026-01-02 at 1.55.31 PM (2).jpeg"
-             class="img-fluid rounded"
-             style="max-width:350px;">
-    </div>
-
-    <div class="col-lg-7 col-12 text-white">
-        <h5 class="text-success">Discover</h5>
-        <h2><span style="border-bottom:2px solid green;">Ab</span>out Me</h2>
-
-        <p class="mt-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-
-        <div class="row border border-success p-3 mt-4">
-            <div class="col-md-6">
-                <p><strong>Name:</strong> Merry Smith</p>
-                <p><strong>Phone:</strong> 0123456789</p>
-                <p><strong>Experience:</strong> 6 Years</p>
-            </div>
-            <div class="col-md-6">
-                <p><strong>Age:</strong> 26</p>
-                <p><strong>Address:</strong> Tosson</p>
-                <p><strong>Freelance:</strong> Available</p>
-            </div>
-        </div>
-
-        <button class="btn btn-success mt-4 px-4">
-            Download CV
-        </button>
-    </div>
-
-</div>
-</div>
-</section>
-
-<!-- ========== SERVICES ========== -->
-<section style="background:#012201; min-height:100vh;">
-<div class="container py-5">
-    <h4 class="text-success">What I Do</h4>
-    <h2 class="text-white mb-5">
-        <span style="border-bottom:2px solid #05d805;">MY</span> Services
-    </h2>
-
-    <div class="row g-4">
-        <div class="col-lg-4 col-md-6 col-12">
-            <div class="p-4 text-white h-100"
-                 style="border:2px solid #05d105;border-radius:20px;">
-                <h2>🐱‍👤</h2>
-                <h4>Creative Design</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-12">
-            <div class="p-4 text-white h-100"
-                 style="border:2px solid #05d105;border-radius:20px;">
-                <h2>🐱‍💻</h2>
-                <h4>Web Development</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-12">
-            <div class="p-4 text-white h-100"
-                 style="border:2px solid #05d105;border-radius:20px;">
-                <h2>🐱‍👓</h2>
-                <h4>UI / UX</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<!-- ================= ABOUT ================= -->
+<section class="section-dark py-5">
+<div class="container">
+<div class="row align-items-center
